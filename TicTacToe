@@ -1,0 +1,141 @@
+// It is not finished yet, sorry teacher but I haven't seen this assignment on moodle.
+
+static void line()
+{
+    Console.WriteLine("-----------");
+}
+
+string one = " ";
+string two = " ";
+string three = " ";
+string four = " ";
+string five = " ";
+string six = " ";
+string seven = " ";
+string eight = " ";
+string nine = " ";
+
+Console.WriteLine("Welcome to tic-tac-toe!");
+line();
+
+
+static void MyFrame()
+{
+    Console.WriteLine("   |   |   ");
+    Console.WriteLine("---+---+---");
+    Console.WriteLine("           ");
+    Console.WriteLine("---+---+---");
+    Console.WriteLine("   |   |   ");
+}
+
+Console.WriteLine($" {one} | {two} | {three} ");
+Console.WriteLine("---+---+---");
+Console.WriteLine($" {four} | {five} | {six} ");
+Console.WriteLine("---+---+---");
+Console.WriteLine($" {seven} | {eight} | {nine} ");
+
+
+
+    for (int i = 0; i <= 4; i++)
+    {
+        Console.Write("X's move:");
+        int choicex = Convert.ToInt32(Console.ReadLine());
+        switch (choicex)
+        {
+            case 1:
+                one = "X";
+                Console.WriteLine();
+                break;
+            case 2:
+                two = "X";
+                Console.WriteLine();
+                break;
+            case 3:
+                three = "X";
+                Console.WriteLine();
+                break;
+            case 4:
+                four = "X";
+                Console.WriteLine();
+                break;
+            case 5:
+                five = "X";
+                Console.WriteLine();
+                break;
+            case 6:
+                six = "X";
+                Console.WriteLine();
+                break;
+            case 7:
+                seven = "X";
+                Console.WriteLine();
+                break;
+            case 8:
+                eight = "X";
+                Console.WriteLine();
+                break;
+            case 9:
+                nine = "X";
+                Console.WriteLine();
+                break;
+            default:
+                Console.WriteLine("Default case executed. No match for choicex.");
+                break;
+        }
+        Console.WriteLine($" {one} | {two} | {three} ");
+        Console.WriteLine("---+---+---");
+        Console.WriteLine($" {four} | {five} | {six} ");
+        Console.WriteLine("---+---+---");
+        Console.WriteLine($" {seven} | {eight} | {nine} ");
+        line();
+        Console.WriteLine("O's move:");
+        int choiceo = Convert.ToInt32(Console.ReadLine());
+        switch (choiceo)
+        {
+            case 1:
+                one = "O";
+                Console.WriteLine();
+                break;
+            case 2:
+                two = "O";
+                Console.WriteLine();
+                break;
+            case 3:
+                three = "O";
+                Console.WriteLine();
+                break;
+            case 4:
+                four = "O";
+                Console.WriteLine();
+                break;
+            case 5:
+                five = "O";
+                Console.WriteLine();
+                break;
+            case 6:
+                six = "O";
+                Console.WriteLine();
+                break;
+            case 7:
+                seven = "O";
+                Console.WriteLine();
+                break;
+            case 8:
+                eight = "O";
+                Console.WriteLine();
+                break;
+            case 9:
+                nine = "O";
+                Console.WriteLine();
+                break;
+            default:
+                Console.WriteLine("Default case executed. No match for choicex.");
+                break;
+        }
+        Console.WriteLine($" {one} | {two} | {three} ");
+        Console.WriteLine("---+---+---");
+        Console.WriteLine($" {four} | {five} | {six} ");
+        Console.WriteLine("---+---+---");
+        Console.WriteLine($" {seven} | {eight} | {nine} ");
+        line();
+    }
