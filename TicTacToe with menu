@@ -1,0 +1,117 @@
+//* This is once again first, simple, not fully working version. It will be developed soon
+
+bool game = true;
+if (game = true)
+{
+
+
+    Console.WriteLine("1. New game");
+    Console.WriteLine("2. About the author");
+    Console.WriteLine("3. Exit");
+
+    int firstchoice = Convert.ToInt32(Console.ReadLine());
+    switch (firstchoice)
+    {
+        case 1:
+            newgame();
+            break;
+        case 2:
+            aboutauthor();
+            break;
+        case 3:
+            exit();
+            break;
+        default:
+            break;
+    }
+
+    static void line()
+    {
+        Console.WriteLine("-----------");
+    }
+
+
+    void newgame()
+    {
+
+        string[] frameXO = new string[9];
+        for (int aa = 0; aa < frameXO.Length; aa++)
+        {
+            frameXO[aa] = " ";
+        }
+
+        Console.WriteLine("Welcome in Tic-Tac-Toe!");
+
+        Console.WriteLine("   |   |   ");
+        Console.WriteLine("---+---+---");
+        Console.WriteLine("           ");
+        Console.WriteLine("---+---+---");
+        Console.WriteLine("   |   |   ");
+
+
+        for (int i = 0; i < 9; i++)
+        {
+            int modulus = i % 2;
+            if (modulus == 0)
+            {
+                Console.WriteLine("X's move: ");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                if (choice >= 1 && choice <= 9 && frameXO[choice - 1] == " ")
+                {
+                    frameXO[choice - 1] = "X";
+                    Console.WriteLine($" {frameXO[0]} | {frameXO[1]} | {frameXO[2]} ");
+                    Console.WriteLine("---+---+---");
+                    Console.WriteLine($" {frameXO[3]}   {frameXO[4]}  {frameXO[5]}  ");
+                    Console.WriteLine("---+---+---");
+                    Console.WriteLine($" {frameXO[6]} | {frameXO[7]} | {frameXO[8]} ");
+                }
+                else
+                {
+                    Console.WriteLine("Illegal Move!");
+                    i--;
+                }
+            }
+            else
+            {
+                Console.WriteLine("O's move: ");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                if (choice >= 1 && choice <= 9 && frameXO[choice - 1] == " ")
+                {
+                    frameXO[choice - 1] = "O";
+                    Console.WriteLine($" {frameXO[0]} | {frameXO[1]} | {frameXO[2]} ");
+                    Console.WriteLine("---+---+---");
+                    Console.WriteLine($" {frameXO[3]}   {frameXO[4]}  {frameXO[5]}  ");
+                    Console.WriteLine("---+---+---");
+                    Console.WriteLine($" {frameXO[6]} | {frameXO[7]} | {frameXO[8]} ");
+                }
+                else
+                {
+                    Console.WriteLine("Illegal Move!");
+                    i--;
+                }
+
+            }
+
+
+            line();
+
+        }
+        Console.WriteLine("Game Over!");
+    }
+
+    void aboutauthor()
+    {
+        line();
+        Console.WriteLine("Author's name is XYZ");
+        Console.WriteLine("He comes from XYZ");
+    }
+    void exit()
+    {
+        game = false;
+    }
+}
+else
+{
+    Console.WriteLine("Game Over!");
+    System.Environment.Exit(0);
+}
