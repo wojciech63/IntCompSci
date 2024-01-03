@@ -1,10 +1,6 @@
-//* This is once again first, simple, not fully working version. It will be developed soon
-
 bool game = true;
-if (game = true)
+while (game)
 {
-
-
     Console.WriteLine("1. New game");
     Console.WriteLine("2. About the author");
     Console.WriteLine("3. Exit");
@@ -64,6 +60,46 @@ if (game = true)
                     Console.WriteLine($" {frameXO[3]}   {frameXO[4]}  {frameXO[5]}  ");
                     Console.WriteLine("---+---+---");
                     Console.WriteLine($" {frameXO[6]} | {frameXO[7]} | {frameXO[8]} ");
+                    if (frameXO[0].Contains('X') && frameXO[1].Contains('X') && frameXO[2].Contains('X'))
+                    {
+                        Console.WriteLine("X won!");
+                        break;
+                    }
+                    else if (frameXO[3].Contains('X') && frameXO[4].Contains('X') && frameXO[5].Contains('X'))
+                    {
+                        Console.WriteLine("X won!");
+                        break;
+                    }
+                    else if (frameXO[6].Contains('X') && frameXO[7].Contains('X') && frameXO[8].Contains('X'))
+                    {
+                        Console.WriteLine("X won!");
+                        break;
+                    }
+                    else if (frameXO[0].Contains('X') && frameXO[3].Contains('X') && frameXO[6].Contains('X'))
+                    {
+                        Console.WriteLine("X won!");
+                        break;
+                    }
+                    else if (frameXO[1].Contains('X') && frameXO[4].Contains('X') && frameXO[7].Contains('X'))
+                    {
+                        Console.WriteLine("X won!");
+                        break;
+                    }
+                    else if (frameXO[2].Contains('X') && frameXO[5].Contains('X') && frameXO[8].Contains('X'))
+                    {
+                        Console.WriteLine("X won!");
+                        break;
+                    }
+                    else if (frameXO[0].Contains('X') && frameXO[4].Contains('X') && frameXO[8].Contains('X'))
+                    {
+                        Console.WriteLine("X won!");
+                        break;
+                    }
+                    else if (frameXO[2].Contains('X') && frameXO[4].Contains('X') && frameXO[6].Contains('X'))
+                    {
+                        Console.WriteLine("X won!");
+                        break;
+                    }
                 }
                 else
                 {
@@ -83,6 +119,46 @@ if (game = true)
                     Console.WriteLine($" {frameXO[3]}   {frameXO[4]}  {frameXO[5]}  ");
                     Console.WriteLine("---+---+---");
                     Console.WriteLine($" {frameXO[6]} | {frameXO[7]} | {frameXO[8]} ");
+                    if (frameXO[0].Contains('O') && frameXO[1].Contains('O') && frameXO[2].Contains('O'))
+                    {
+                        Console.WriteLine("O won!");
+                        break;
+                    }
+                    else if (frameXO[3].Contains('O') && frameXO[4].Contains('O') && frameXO[5].Contains('O'))
+                    {
+                        Console.WriteLine("O won!");
+                        break;
+                    }
+                    else if (frameXO[6].Contains('O') && frameXO[7].Contains('O') && frameXO[8].Contains('O'))
+                    {
+                        Console.WriteLine("O won!");
+                        break;
+                    }
+                    else if (frameXO[0].Contains('O') && frameXO[3].Contains('O') && frameXO[6].Contains('O'))
+                    {
+                        Console.WriteLine("O won!");
+                        break;
+                    }
+                    else if (frameXO[1].Contains('O') && frameXO[4].Contains('O') && frameXO[7].Contains('O'))
+                    {
+                        Console.WriteLine("O won!");
+                        break;
+                    }
+                    else if (frameXO[2].Contains('O') && frameXO[5].Contains('O') && frameXO[8].Contains('O'))
+                    {
+                        Console.WriteLine("O won!");
+                        break;
+                    }
+                    else if (frameXO[0].Contains('O') && frameXO[4].Contains('O') && frameXO[8].Contains('O'))
+                    {
+                        Console.WriteLine("O won!");
+                        break;
+                    }
+                    else if (frameXO[2].Contains('O') && frameXO[4].Contains('O') && frameXO[6].Contains('O'))
+                    {
+                        Console.WriteLine("O won!");
+                        break;
+                    }
                 }
                 else
                 {
@@ -109,9 +185,4 @@ if (game = true)
     {
         game = false;
     }
-}
-else
-{
-    Console.WriteLine("Game Over!");
-    System.Environment.Exit(0);
 }
