@@ -2,8 +2,12 @@ bool game = true;
 while (game)
 {
     Console.WriteLine("1. New game");
+    line();
     Console.WriteLine("2. About the author");
+    line();
     Console.WriteLine("3. Exit");
+    line();
+    Console.WriteLine("What is your choice?");
 
     int firstchoice = Convert.ToInt32(Console.ReadLine());
     switch (firstchoice)
@@ -18,8 +22,10 @@ while (game)
             exit();
             break;
         default:
+            Console.WriteLine("Invalid choice. Please select 1, 2 or 3.");
             break;
     }
+
 
     static void line()
     {
@@ -63,41 +69,65 @@ while (game)
                     if (frameXO[0].Contains('X') && frameXO[1].Contains('X') && frameXO[2].Contains('X'))
                     {
                         Console.WriteLine("X won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[3].Contains('X') && frameXO[4].Contains('X') && frameXO[5].Contains('X'))
                     {
                         Console.WriteLine("X won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[6].Contains('X') && frameXO[7].Contains('X') && frameXO[8].Contains('X'))
                     {
                         Console.WriteLine("X won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[0].Contains('X') && frameXO[3].Contains('X') && frameXO[6].Contains('X'))
                     {
                         Console.WriteLine("X won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[1].Contains('X') && frameXO[4].Contains('X') && frameXO[7].Contains('X'))
                     {
                         Console.WriteLine("X won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[2].Contains('X') && frameXO[5].Contains('X') && frameXO[8].Contains('X'))
                     {
                         Console.WriteLine("X won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[0].Contains('X') && frameXO[4].Contains('X') && frameXO[8].Contains('X'))
                     {
                         Console.WriteLine("X won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[2].Contains('X') && frameXO[4].Contains('X') && frameXO[6].Contains('X'))
                     {
                         Console.WriteLine("X won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                 }
@@ -122,41 +152,65 @@ while (game)
                     if (frameXO[0].Contains('O') && frameXO[1].Contains('O') && frameXO[2].Contains('O'))
                     {
                         Console.WriteLine("O won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[3].Contains('O') && frameXO[4].Contains('O') && frameXO[5].Contains('O'))
                     {
                         Console.WriteLine("O won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[6].Contains('O') && frameXO[7].Contains('O') && frameXO[8].Contains('O'))
                     {
                         Console.WriteLine("O won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[0].Contains('O') && frameXO[3].Contains('O') && frameXO[6].Contains('O'))
                     {
                         Console.WriteLine("O won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[1].Contains('O') && frameXO[4].Contains('O') && frameXO[7].Contains('O'))
                     {
                         Console.WriteLine("O won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[2].Contains('O') && frameXO[5].Contains('O') && frameXO[8].Contains('O'))
                     {
                         Console.WriteLine("O won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[0].Contains('O') && frameXO[4].Contains('O') && frameXO[8].Contains('O'))
                     {
                         Console.WriteLine("O won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                     else if (frameXO[2].Contains('O') && frameXO[4].Contains('O') && frameXO[6].Contains('O'))
                     {
                         Console.WriteLine("O won!");
+                        Console.WriteLine("Press Enter to return to the main menu.");
+                        Console.ReadLine();
+                        line();
                         break;
                     }
                 }
@@ -180,9 +234,13 @@ while (game)
         line();
         Console.WriteLine("Author's name is XYZ");
         Console.WriteLine("He comes from XYZ");
+        Console.WriteLine("Press Enter to return to the main menu.");
+        Console.ReadLine();
+        line();
     }
     void exit()
     {
+        Console.WriteLine("Bye!!!");
         game = false;
     }
 }
