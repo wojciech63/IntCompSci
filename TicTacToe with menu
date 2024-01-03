@@ -10,13 +10,16 @@ while (game)
     Console.WriteLine("What is your choice?");
 
     int firstchoice = Convert.ToInt32(Console.ReadLine());
+    Console.Clear();
     switch (firstchoice)
     {
         case 1:
             newgame();
+            Console.Clear();
             break;
         case 2:
             aboutauthor();
+            Console.Clear();
             break;
         case 3:
             exit();
